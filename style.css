@@ -25,22 +25,22 @@ body {
 }
 
 .top-left {
-  background-color: red;
+  background-color: seagreen;
   border-top-left-radius: 10px;
 }
 
 .top-right {
-  background-color: greenyellow;
+  background-color: firebrick;
   border-top-right-radius: 10px;
 }
 
 .bottom-left {
-  background-color: blue;
+  background-color: #cccc00;
   border-bottom-left-radius: 10px;
 }
 
 .bottom-right {
-  background-color: blueviolet;
+  background-color: royalblue;
   border-bottom-right-radius: 10px;
 }
 
