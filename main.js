@@ -18,7 +18,7 @@ var topRight = document.querySelector("#box-topright");
 var bottomLeft = document.querySelector("#box-bottomleft");
 var bottomRight = document.querySelector("#box-bottomright");
 var strictButton = document.querySelector("#strict");
-var onButton = document.querySelector("#on");
+var onButton = document.querySelector("#switch");
 var startButton = document.querySelector("#start");
 
 // ************** Ristrict Mode ON/OFF *********
