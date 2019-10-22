@@ -21,27 +21,42 @@
   </head>
   <body>
     <div class="container">
+
+      <!-- Game Main placeholder for all cubes -->
       <div class="game-container">
-        <div class="box top-left" id="box-topleft"></div>
-        <div class="box top-right" id="box-topright"></div>
-        <div class="box bottom-left" id="box-bottomleft"></div>
-        <div class="box bottom-right" id="box-bottomright"></div>
+        <div class="box top-left" id="box-topleft"></div>  <!-- /top left cube green -->
+        <div class="box top-right" id="box-topright"></div> <!-- /top right cube red -->
+        <div class="box bottom-left" id="box-bottomleft"></div> <!-- /bottom left cube yellow -->
+        <div class="box bottom-right" id="box-bottomright"></div> <!-- /bottom right cube blue -->
       </div>
+
+      <!-- Container box for the game CONTROLS / function -->
       <div class="inner">
         <h2>SIMON</h2>
         <div class="func">
+
+          <!-- control to Turn ON / OFF the game -->
           <div class="power-func">
-            <input type="checkbox" value="power" id="on" />
+            <div class="switch-toggle">
+              <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+          </div>
             <span class="power">Power</span>
           </div>
 
+          <!-- Button to start the game -->
           <button id="start">PLAY</button>
+
+          <!-- To play the game on Strict mode -->
           <div class="strict-func">
-            <input type="checkbox" value="strict" id="strict" />
+            <div class="switch-toggle">
+              <input type="checkbox" id="strict" /><label for="strict">Toggle</label>
+
+          </div>
             <span class="strict">Strict</span>
           </div>
         </div>
 
+        <!-- Counter for the game -->
         <div class="counter" id="turn">0</div>
         <h5>COUNT</h5>
 
