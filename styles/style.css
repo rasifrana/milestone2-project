@@ -157,6 +157,10 @@ label:active:after {
     flex-direction: column;
   }
 
+  .inner {
+    padding: 10px;
+  }
+
   .inner button {
     padding: 10px;
     font-size: 1rem;
