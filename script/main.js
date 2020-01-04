@@ -236,3 +236,10 @@ function winGame() {
   on = false;
   win = true;
 }
+
+let btn = document.querySelector("#click");
+let info = document.querySelector("#info");
+
+btn.addEventListener("click", function() {
+  info.classList.toggle("move");
+});

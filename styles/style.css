@@ -3,17 +3,66 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: radial-gradient(rgb(73, 94, 163), rgb(17, 26, 61));
+  background: radial-gradient(rgba(1, 56, 73, 0.7), rgb(25, 38, 92));
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
+  position: relative;
   margin: auto;
   height: 100vh;
   max-width: 1200px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+div.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  cursor: pointer;
+  color: white !important;
+  font-size: 2rem;
+  margin: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0 8px;
+  z-index: 500;
+}
+
+#info {
+  /* width: 100%;
+  height: 100%; */
+  color: #fff;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../assets/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.5s ease-in-out;
+}
+
+.info-details {
+  /* width: 100%; */
+  height: 100%;
+  padding: 50px;
+  text-align: center;
+  margin: 0;
+  color: #eaece3;
+  background-color: rgba(1, 56, 73, 0.87);
+}
+
+.move {
+  left: 0 !important;
 }
 
 /* styling for game container with all cubes */
