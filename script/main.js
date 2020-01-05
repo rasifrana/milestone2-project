@@ -237,7 +237,7 @@ function winGame() {
   win = true;
 }
 
-let btn = document.querySelector("#click");
+let btn = document.querySelector(".click");
 let info = document.querySelector("#info");
 
 btn.addEventListener("click", function() {
