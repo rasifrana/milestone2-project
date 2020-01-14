@@ -1,81 +1,88 @@
-# Your Project's Name
+# Clonee Computers
 
-One or two paragraphs providing an overview of your project.
+Clonee Computers is a small company who provides Service for all devices including, Desktops, Laptos and Macbooks for repairing and bug fixing.
 
-Essentially, this part is your sales pitch.
- 
+We Provide hardware and software service for configuration and fixing.
+
 ## UX
- 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+This project is for a small company who offers different range of services providing desktops and laptops repairs, fixes and sale.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+A person or a business can visit to this website and experience the solution for their problems related to their hardware or software.
+
+It is easy to navigate and made up of sections on a single page.
+
+If a user does not have all the answers then they can submit the form for more details.
+
+- Wireframe for this projects (links are below).
+
+- Desktop wireframe: https://github.com/rasifrana/clonee-computers/blob/master/wireframes/Desktop-wireframe.pdf
+
+- Mobile Devices wireframe: https://github.com/rasifrana/clonee-computers/blob/master/wireframes/mobile-wireframe.pdf
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
+This project is a single page website and it is divided into 7 Sections
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+- **Section 1** is Landing Page with picture and overlay in the background and has Main Title and small paragraph about the services , this company offers. A fixed position of NAVIGATION MENU is relative to viewport with top, left and right 0
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- **Section 2** is where company offers some of the main services and is divided into 6 cards that consist of Icon, Heading and Paragraph.
+  On Mobile view, each card takes up full width of body.
 
-### Features Left to Implement
-- Another feature idea
+- **Section** 3 is about company details and prices company offers.
+  there is an image on one side and Texts on the other half width.
+
+- **Section 4** displays some of the most popular brands with icons.
+
+- **Section 5** is a Testimonial Page which has 2 cards. Each card has an image of the customer who shared their experice and opinions.
+
+- **Section 6** is a quotation form, that requires Name, Email, Phone and service request and can be submitted.
+
+- **Last Section** is Contact information of company with a phone number if tapped on mobile version will open to Phone Application directly.
+
+## Existing Feature
+
+- A hamburger menu was created for responsive layout (tablets and smartphones). This was done entirely in html and css (no javaScript) for good user experience.
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+- HTML
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+  - Basic html structure / markup.
 
+- CSS3
+
+  - CSS3 for styling the website and used flexbox for layouts and positioning elements.
+
+- Font Awesome
+
+  - to use fonts in this project, link https://fontawesome.com/icons
+
+- Google fonts
+  - to make website beautifully, Montserrat font-family was used referencing https://fonts.google.com/ CDN
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+Testing was done manually by me and also by other peers in slack channel peer-code-review and found some errors including contact form validation where name, phone, emal and services was required but not included in these elements. Fixed and tested.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+This project is completely responsive with different layout on small and mobile devices. This was done using media queries.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Project was also tested on w3.org for any error, which were fixed afterwards, link: https://validator.w3.org/nu/?doc=https%3A%2F%2Frasifrana.github.io%2Fclonee-computers%2F
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+Local git repository was initated in the begining o fthis project and several commits were made during the development.
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+Project was pushed to remote repository on https://github.com on master branch.
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
-
+Used github pages to host this project on master branch
 
 ## Credits
 
-### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
-
 ### Media
-- The photos used in this site were obtained from ...
+
+- The photos used in this site were obtained from https://pexels.com and https://unsplash.com
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration for this project from https://dribble.com
