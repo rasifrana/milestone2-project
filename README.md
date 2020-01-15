@@ -54,8 +54,6 @@ Jamsin was used for unit testing. all files are attached for Specs
 
 This project is completely responsive with different layout on small and mobile devices. This was done using media queries.
 
-Project was also tested on w3.org for any error, which were fixed afterwards, link: https://validator.w3.org/nu/?doc=https%3A%2F%2Frasifrana.github.io%2Fclonee-computers%2F
-
 ## Deployment
 
 Local git repository was initated in the begining of this project and several commits were made during the development.
@@ -68,7 +66,7 @@ Used github pages to host this project on master branch
 
 ### Media
 
-- The photo used in this site were obtained from https://pexels.com and https://unsplash.com
+- The photo used in this site were obtained from https://unsplash.com
 
 ### Acknowledgements
 
