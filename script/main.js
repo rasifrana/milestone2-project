@@ -1,25 +1,25 @@
-var order = [];
-var playerOrder = [];
-var flash;
-var turn;
-var good;
-var compTurn;
-var intervalId;
-var strict = false;
-var noise = true;
-var on = false;
-var win;
+var order = []; //  Game generates order of sequence
+var playerOrder = []; // Player pressing the lights
+var flash; // it will keep record of number of flashed
+var turn; // turn counter
+var good; // boolean condition to check if player hit right colors
+var compTurn; // to check if computer turn should be ON or OFF
+var intervalId; // to control SetInterval function
+var strict = false; // game has strict Mode functionality
+var noise = true; // To generate sound
+var on = false; // Game is turned off in the start
+var win; // if the game is won or not
 
 // **************** All Selectors *************
 
-var turnCounter = document.querySelector("#turn");
-var topLeft = document.querySelector("#box-topleft");
-var topRight = document.querySelector("#box-topright");
-var bottomLeft = document.querySelector("#box-bottomleft");
-var bottomRight = document.querySelector("#box-bottomright");
-var strictButton = document.querySelector("#strict");
-var onButton = document.querySelector("#switch");
-var startButton = document.querySelector("#start");
+let turnCounter = document.querySelector("#turn");
+let topLeft = document.querySelector("#box-topleft");
+let topRight = document.querySelector("#box-topright");
+let bottomLeft = document.querySelector("#box-bottomleft");
+let bottomRight = document.querySelector("#box-bottomright");
+let strictButton = document.querySelector("#strict");
+let onButton = document.querySelector("#switch");
+let startButton = document.querySelector("#start");
 
 // ************** Ristrict Mode ON/OFF *********
 
@@ -44,12 +44,14 @@ onButton.addEventListener("click", function(e) {
   }
 });
 
+//      Start the game
 startButton.addEventListener("click", event => {
   if (on || win) {
     play();
   }
 });
 
+//   MAIN function to Play the game
 function play() {
   win = false;
   order = [];
@@ -59,7 +61,7 @@ function play() {
   turn = 1;
   turnCounter.innerHTML = 1;
   good = true;
-  for (var i = 0; i < 20; i++) {
+  for (var i = 0; i < 10; i++) {
     order.push(Math.floor(Math.random() * 4) + 1);
   }
   compTurn = true;
@@ -67,6 +69,7 @@ function play() {
   intervalId = setInterval(gameTurn, 800);
 }
 
+//  computer will play all colors with sequence
 function gameTurn() {
   on = false;
 
@@ -89,6 +92,7 @@ function gameTurn() {
   }
 }
 
+//     Top left color with sound
 function one() {
   if (noise) {
     let audio = document.getElementById("clip1");
@@ -98,6 +102,7 @@ function one() {
   topLeft.style.backgroundColor = "palegreen";
 }
 
+//     Top right color with sound
 function two() {
   if (noise) {
     let audio = document.getElementById("clip2");
@@ -107,6 +112,7 @@ function two() {
   topRight.style.backgroundColor = "orangered";
 }
 
+//     bottom left color with sound
 function three() {
   if (noise) {
     let audio = document.getElementById("clip3");
@@ -116,6 +122,7 @@ function three() {
   bottomLeft.style.backgroundColor = "rgb(255, 255, 102)";
 }
 
+//     bottom right color with sound
 function four() {
   if (noise) {
     let audio = document.getElementById("clip4");
@@ -132,6 +139,7 @@ function clearColor() {
   bottomRight.style.backgroundColor = "royalblue";
 }
 
+// If player hits wrong color it will flash
 function flashColor() {
   topLeft.style.backgroundColor = "palegreen";
   topRight.style.backgroundColor = "orangered";
@@ -191,6 +199,7 @@ bottomRight.addEventListener("click", event => {
   }
 });
 
+// Checking if player did hit all the right colors
 function check() {
   if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
     good = false;
@@ -201,7 +210,7 @@ function check() {
 
   if (good == false) {
     flashColor();
-    turnCounter.innerHTML = "NO!";
+    turnCounter.innerHTML = "WRONG!";
     setTimeout(() => {
       turnCounter.innerHTML = turn;
       clearColor();
@@ -230,6 +239,7 @@ function check() {
   }
 }
 
+// This function will invoke if game is won
 function winGame() {
   flashColor();
   turnCounter.innerHTML = "WIN!";
@@ -237,6 +247,7 @@ function winGame() {
   win = true;
 }
 
+// icon to display / hide information about game
 let btn = document.querySelector(".click");
 let info = document.querySelector("#info");
 

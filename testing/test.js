@@ -10,7 +10,7 @@ let earth = {
 
 describe("Game", function() {
   it("is round", function() {
-    expect(earth.isRound).toBe(true);
+    expect(play()).toBe((order.length = 10));
   });
   it("num from circle is 3", function() {
     expect(earth.numFromSun).toBe(3);
