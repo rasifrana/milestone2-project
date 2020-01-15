@@ -8,7 +8,7 @@ let earth = {
   }
 };
 
-describe("Earth", function() {
+describe("Game", function() {
   it("is round", function() {
     expect(earth.isRound).toBe(true);
   });
@@ -18,7 +18,7 @@ describe("Earth", function() {
   it("color is brown", function() {
     expect(earth.color).toBe("brown");
   });
-  it("width of area is 40", function() {
-    expect(earth.area.width).toBe(40);
+  it("It should make noise", function() {
+    expect(noise).toBe(true);
   });
 });
