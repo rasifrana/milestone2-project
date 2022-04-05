@@ -8,7 +8,7 @@ This project is for players who are interested in memory games.
 
 It is easy to start playing and sequences to follow.
 
-Follow the steps below -
+Follow the steps below --
 
 - Classic Simon gameplay!
 - Follow lights and sounds!
