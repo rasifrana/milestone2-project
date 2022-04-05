@@ -7,7 +7,7 @@ var compTurn; // to check if computer turn should be ON or OFF
 var intervalId; // to control SetInterval function
 var strict = false; // game has strict Mode functionality
 var noise = true; // To generate sound
-var on = false; // Game is turned off in the start
+var on = false; // Game is turned off in the start.
 var win; // if the game is won or not
 
 // **************** All Selectors *************
@@ -23,7 +23,7 @@ let startButton = document.querySelector("#start");
 
 // ************** Ristrict Mode ON/OFF *********
 
-strictButton.addEventListener("click", function(e) {
+strictButton.addEventListener("click", function (e) {
   if (strictButton.checked == true) {
     strict = true;
   } else {
@@ -32,7 +32,7 @@ strictButton.addEventListener("click", function(e) {
 });
 
 // ************ Game ON / OFF func **********
-onButton.addEventListener("click", function(e) {
+onButton.addEventListener("click", function (e) {
   if (onButton.checked == true) {
     on = true;
     turnCounter.innerHTML = "-";
@@ -251,6 +251,6 @@ function winGame() {
 let btn = document.querySelector(".click");
 let info = document.querySelector("#info");
 
-btn.addEventListener("click", function() {
+btn.addEventListener("click", function () {
   info.classList.toggle("move");
 });
